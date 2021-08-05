@@ -604,6 +604,19 @@
     justify-content: center;
     justify-items: center;
   }
+  .archives-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .archives,
+  .social-links {
+    padding: 30px 50px 0px;
+  }
 
   .submain {
     padding: 0px;
@@ -675,8 +688,9 @@
 
   .archives,
   .social-links {
-    padding: 30px 0px;
+    padding: 30px 25px;
   }
+
   .hidden {
     display: none;
   }
