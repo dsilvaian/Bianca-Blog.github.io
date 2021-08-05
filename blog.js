@@ -22,7 +22,7 @@ showMenuBar.style.padding = '0px';
 
 function togglemenu() {
   if (showMenuBar.style.maxHeight == '0px') {
-    showMenuBar.style.maxHeight = '250px';
+    showMenuBar.style.maxHeight = '320px';
     showMenuBar.style.padding = '0px';
   } else {
     showMenuBar.style.maxHeight = '0px';
@@ -50,60 +50,38 @@ form.addEventListener('submit', function (event) {
   console.log(data);
 
   //Validation
-  if (data.authorname == '') {
+  if (
+    data.authorname == '' ||
+    data.authorname.length <= 2 ||
+    data.authorname == Number(data.authorname)
+  ) {
     document.querySelector('.error-name').innerHTML =
-      '**Please fill the Name field';
+      '**Please enter appropriate Name in the field';
     invalidForm = true;
   }
 
-  if (data.authoremail == '') {
+  if (data.authoremail == '' || Number(data.authoremail.length) <= 7) {
     document.querySelector('.error-email').innerHTML =
-      '**Please fill the Email field';
-    invalidForm = true;
-  }
-
-  if (data.authorblogtitle == '') {
-    document.querySelector('.error-title').innerHTML =
-      '**Please fill the Title field';
-    invalidForm = true;
-  }
-
-  if (data.authorblogcontent == '') {
-    document.querySelector('.error-content').innerHTML =
-      '**Please fill the Blog Content field';
-    invalidForm = true;
-  }
-
-  if (data.authorname.length <= 2) {
-    document.querySelector('.error-name').innerHTML =
-      '**Entered Name length is insufficient';
-    invalidForm = true;
-  }
-
-  if (data.authorname == Number(data.authorname)) {
-    document.querySelector('.error-name').innerHTML =
-      '**Entered Name is a number';
-    invalidForm = true;
-  }
-
-  if (Number(data.authoremail.length) <= 7) {
-    document.querySelector('.error-email').innerHTML =
-      '**Entered email id is invalid';
+      '**Please enter appropriate Email in the field';
     invalidForm = true;
   }
 
   if (
+    data.authorblogtitle == '' ||
     Number(data.authorblogtitle.length) < 5 ||
     Number(data.authorblogtitle.length) > 50
   ) {
     document.querySelector('.error-title').innerHTML =
-      '**Please enter a proper Title';
+      '**Please enter appropriate Title in the field';
     invalidForm = true;
   }
 
-  if (Number(data.authorblogcontent.length) <= 50) {
+  if (
+    data.authorblogcontent == '' ||
+    Number(data.authorblogcontent.length) <= 50
+  ) {
     document.querySelector('.error-content').innerHTML =
-      '**Please enter atleast 50 characters';
+      '**Please fill the Blog Content in the field with words ranging from 50 to 100';
     invalidForm = true;
   }
 

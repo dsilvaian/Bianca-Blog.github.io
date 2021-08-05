@@ -491,7 +491,6 @@
 @media screen and (max-width: 1240px) {
   .container {
     padding: 50px;
-    margin: 10px;
   }
 
   .highlight-heading {
@@ -516,12 +515,7 @@
   }
 
   .navbar {
-    display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
     background-color: black;
     border-radius: 0px 0px 5.1px 5.1px;
   }
@@ -542,12 +536,7 @@
   }
 
   .cards {
-    display: flex;
     flex-direction: column;
-    margin: 30px 0px;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
   }
 
   .card-1,
@@ -633,6 +622,21 @@
     margin: 10px;
   }
 
+  .heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    padding: 20px 0px;
+  }
+
+  .heading-tools {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .card-img {
     width: 100%;
     height: 160px;
@@ -653,11 +657,6 @@
   .heading {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    border-bottom: 1px solid lightslategray;
   }
 
   .name {
@@ -666,9 +665,6 @@
 
   .heading-tools {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
     justify-content: space-between;
     width: 100%;
   }
@@ -681,6 +677,7 @@
     width: 100%;
     height: 160px;
   }
+
   .card-1,
   .card-2 {
     flex-direction: column-reverse;
