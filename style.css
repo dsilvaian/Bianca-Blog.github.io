@@ -587,6 +587,15 @@
     margin: 0px 20px;
   }
 
+  .container-form {
+    padding: 0px;
+  }
+
+  .details,
+  .blog-bf {
+    padding: 20px;
+  }
+
   .about,
   .archives,
   .social-links {
