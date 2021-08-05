@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Bianca Blogs</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <!--Header-->
+        <div class="heading">
+          <a href="#" class="sub">Subcribe</a>
+          <a href="#" class="name">
+            <h1>Bianca Blogs</h1>
+          </a>
+          <div class="heading-tools">
+            <img src="./assets/search.png" alt="search" class="search" />
+            <button class="sign">Sign up</button>
+            <img
+              src="./assets/menu.png"
+              alt=""
+              srcset=""
+              class="menubar"
+              onclick="togglemenu()"
+            />
+          </div>
+        </div>
+
+        <!--Navigation Bar-->
+        <nav class="navbar" id="menuItems">
+          <a href="#" class="menu">World</a>
+          <a href="#" class="menu">U.S</a>
+          <a href="#" class="menu">Technology</a>
+          <a href="#" class="menu">Design</a>
+          <a href="#" class="menu">Culture</a>
+          <a href="#" class="menu">Business</a>
+          <a href="#" class="menu">Politics</a>
+          <a href="#" class="menu">Opinion</a>
+          <a href="#" class="menu">Science</a>
+          <a href="#" class="menu">Health</a>
+          <a href="#" class="menu">Style</a>
+          <a href="#" class="menu">Travel</a>
+        </nav>
+
+        <!--Highlight Main Flash Cards-->
+        <header class="highlight">
+          <div class="highlight-heading">
+            <h1 class="topic">Title of longer feautred blog post</h1>
+            <p class="description">
+              Multiple lines of text that form the lede, informing new readers
+              quickly and efficiently about what's most interesting in this
+              post's contents
+            </p>
+            <a href="#" class="continue">Continue reading...</a>
+          </div>
+        </header>
+
+        <!--Highlight Sub-Flash Cards-->
+        <section class="cards">
+          <div class="card-1">
+            <div class="card-description">
+              <a href="#" class="card-section-1">World</a>
+              <h2 class="card-heading">Feautred post</h2>
+              <p class="card-date">Nov 12</p>
+              <p class="card-content">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a href="#" class="card-continue">Continue reading...</a>
+            </div>
+            <div class="card-img">
+              <p>Thumbnail</p>
+            </div>
+          </div>
+          <div class="card-2">
+            <div class="card-description">
+              <a href="#" class="card-section-2">Design</a>
+              <h2 class="card-heading">Post title</h2>
+              <p class="card-date">Nov 11</p>
+              <p class="card-content">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a href="#" class="card-continue">Continue reading...</a>
+            </div>
+            <div class="card-img">
+              <p>Thumbnail</p>
+            </div>
+          </div>
+        </section>
+
+        <!--Main body-->
+        <section class="maincontent">
+          <!--Main blog body-->
+          <div class="blog">
+            <div class="post-blog">
+              <div class="tagline">
+                <h2>From the Firehose</h2>
+              </div>
+              <button class="create-blog">Create a blog</button>
+            </div>
+            <div class="insertblog">
+              <!--Sample Blog body-->
+              <div class="containerblog">
+                <div class="blog-header">
+                  <div class="blog-title">
+                    <h1>Swizertland Travel Guide (Sample Blog Post)</h1>
+                  </div>
+                  <div class="blog-author-details">
+                    <p>
+                      January 1, 2014 by <span class="author-name">Mark</span>
+                    </p>
+                  </div>
+                  <div class="blog-description">
+                    This blog post shows a few different types of content that's
+                    supported and styled with bootstrap,. Basic typography,
+                    images, and code are all supported.
+                  </div>
+                </div>
+                <div class="blog-body">
+                  <div class="blog-summary">
+                    No matter where you look in Switzerland, you’ll be in awe by
+                    its beauty. It has towering mountains that are covered in
+                    snow no matter what season, crystal-clear lakes, quaint
+                    little villages, crystal clear lakes, and rolling hills.
+                    Plus a whole lot of chocolate and cheese! You could easily
+                    spend months exploring the country. Highlights include
+                    Lucerne, Bern, Zurich, Geneva, Grindelwald, Gruyeres, St.
+                    Moritz, and Interlaken. And these don’t even begin to cover
+                    it! The best way to see this incredible country? The Swiss
+                    Travel Pass which allows you to travel around by train,
+                    which offers some of the best views you will ever experience
+                    in your life.
+                  </div>
+                  <div class="blog-main-heading">
+                    <h1>The best time to visit (Heading)</h1>
+                  </div>
+                  <div class="blog-content">
+                    The best time to visit Switzerland is during the shoulder
+                    seasons, as in April to June and September to October. You
+                    can enjoy fewer crowds, mild weather, and lower prices. In
+                    fact, the mountain resort towns are almost completely dead.
+                    In the spring and fall, you might also get the chance to
+                    witness cattle processions that wind through alpine
+                    villages. Tourists descend into Switzerland in the summer
+                    months to soak up the sunshine and wildflowers that are
+                    blooming in the countryside. The snow also typically thaws
+                    so you’ll have the chance to hike trails that are often
+                    covered. Most mountain resorts open up again but bookings
+                    will come at higher prices (I’m talking almost 50% higher!).
+                    Winter is both low and high season. How is that possible?
+                    Well, the summer tourists are long gone but in come those
+                    that love snow sports! Prices don’t drop on the slopes but
+                    do so everywhere else in the country if you’re looking to
+                    save a little cash and enjoy a winter wonderland.
+                  </div>
+                  <div class="blog-sub-heading">
+                    <h1>What to expect (Sub-Heading)</h1>
+                  </div>
+                  <div class="blog-sub-content">
+                    Language: There are four national languages in Switzerland,
+                    all found in specific regions of the country. The most
+                    widely spoken language is Swiss German, spoken by over 60%
+                    of the population. In the western part of the country, Swiss
+                    French is spoken, and in the southern part of the country,
+                    Swiss Italian is spoken. The smallest national language is
+                    Romansh. Currency: The official currency of Switzerland is
+                    the Swiss Franc (CHF). 1 USD is equivalent to 0.98 CHF. Many
+                    shops, hotels, and train stations will also accept euros.
+                  </div>
+                  <div class="blog-sub-heading">
+                    <h1>Safety (Sub-Heading)</h1>
+                  </div>
+                  <div class="blog-sub-content">
+                    Safety: Switzerland is in the top 10 of the safest countries
+                    in the world. Violent crime is rare but petty crime such as
+                    pickpocketing and theft of vehicles (including bikes) does
+                    occasionally happen.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Sample Another Blog  body-->
+            <div class="container-another-blog-post">
+              <div class="another-blog-post-title">
+                <h1>Another Blog Post</h1>
+              </div>
+              <div class="another-blog-post-author-deatils">
+                <p>
+                  December 23, 2013 by <span class="author-name">Jacob</span>
+                </p>
+              </div>
+              <div class="another-blog-post-content">
+                Language: There are four national languages in Switzerland, all
+                found in specific regions of the country. The most widely spoken
+                language is Swiss German, spoken by over 60% of the population.
+                In the western part of the country, Swiss French is spoken, and
+                in the southern part of the country, Swiss Italian is spoken.
+                The smallest national language is Romansh. Currency: The
+                official currency of Switzerland is the Swiss Franc (CHF). 1 USD
+                is equivalent to 0.98 CHF. Many shops, hotels, and train
+                stations will also accept euros.
+              </div>
+            </div>
+
+            <!--Sample New feature Blog  body-->
+            <div class="container-newfeature-blog-post">
+              <div class="newfeature-blog-post-title">
+                <h1>New feature</h1>
+              </div>
+              <div class="newfeature-blog-post-author-deatils">
+                <p>
+                  December 14, 2013 by <span class="author-name">Chris</span>
+                </p>
+              </div>
+              <div class="newfeature-blog-post-content">
+                Language: There are four national languages in Switzerland, all
+                found in specific regions of the country. The most widely spoken
+                language is Swiss German, spoken by over 60% of the population.
+                In the western part of the country, Swiss French is spoken, and
+                in the southern part of the country, Swiss Italian is spoken.
+                The smallest national language is Romansh. Currency: The
+                official currency of Switzerland is the Swiss Franc (CHF). 1 USD
+                is equivalent to 0.98 CHF. Many shops, hotels, and train
+                stations will also accept euros.
+              </div>
+            </div>
+
+            <!--Sort blog buttons-->
+            <div class="old-new">
+              <button class="sort">Older</button>
+              <button class="sort">Newer</button>
+            </div>
+          </div>
+
+          <!--Perosnal Details-->
+          <div class="information">
+            <!--About Us-->
+            <div class="about">
+              <div class="about-heading">About</div>
+              <div class="about-content">
+                <p>
+                  Etiam porta sem ma/esuada magna mollis euismod. Cras mattis
+                  consectetur purus sit amet fermentum. Aenean lacinia bibendum
+                  nulla sed consectetur.
+                </p>
+              </div>
+            </div>
+            <!--Archives-->
+            <div class="archives">
+              <div class="archives-heading">Archives</div>
+              <div class="archives-content">
+                <a href="#" class="years">March 2014</a>
+                <a href="#" class="years"> February 2014</a>
+                <a href="#" class="years">January 2014</a>
+                <a href="#" class="years">December 2013</a>
+                <a href="#" class="years">November 2013</a>
+                <a href="#" class="years">October 2013</a>
+                <a href="#" class="years">September 2013</a>
+                <a href="#" class="years">August 2013</a>
+                <a href="#" class="years">July 2013</a>
+                <a href="#" class="years">June 2013</a>
+                <a href="#" class="years">May 2013</a>
+                <a href="#" class="years">April 2013</a>
+              </div>
+            </div>
+            <!--Social Links-->
+            <div class="social-links">
+              <div class="links-heading">Elsewhere</div>
+              <div class="links-content">
+                <a href="#" class="years">Github</a>
+                <a href="#" class="years">Twitter</a>
+                <a href="#" class="years">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Form for creating new Blog-->
+        <div class="submain hidden">
+          <div class="container-form">
+            <div class="close">
+              <img
+                src="./assets/close.png"
+                alt="close"
+                srcset=""
+                class="close-x"
+              />
+            </div>
+            <h1 class="form-heading">Create a Blog</h1>
+            <div class="bg-img"></div>
+            <form action="" id="bgform">
+              <div class="details">
+                <div class="personal-heading">
+                  <h2>Personal Details</h2>
+                </div>
+                <div class="personal-details">
+                  <input
+                    type="text"
+                    class="personal-input-field"
+                    id="authorname"
+                    name="authorname"
+                  />
+                  <label class="input-label" for="authorname">Name</label>
+                </div>
+                <div class="error-name err"></div>
+                <div class="personal-details">
+                  <input
+                    type="text"
+                    class="personal-input-field email"
+                    id="authoremail"
+                    name="authoremail"
+                  />
+                  <label class="input-label" for="authoremail">Email</label>
+                </div>
+                <div class="error-email err"></div>
+              </div>
+              <div class="blog-bf">
+                <div class="blog-heading">
+                  <h2>Blog Details</h2>
+                </div>
+                <div class="error-details"></div>
+                <div class="blog-details">
+                  <input
+                    type="text"
+                    class="personal-input-field"
+                    id="authorblogtitle"
+                    name="authorblogtitle"
+                  />
+                  <label class="input-label" for="authorblogtitle"
+                    >Blog Title</label
+                  >
+                </div>
+                <div class="error-title err"></div>
+                <div class="blog-details">
+                  <input
+                    type="text"
+                    class="personal-input-field content"
+                    id="authorblogcontent"
+                    name="authorblogcontent"
+                    style="height: 150px"
+                  />
+                  <label class="input-label" for="authorblogcontent"
+                    >Blog Content</label
+                  >
+                </div>
+                <div class="error-content err"></div>
+              </div>
+              <div class="submit-button">
+                <button class="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--Blog Footer-->
+      <footer class="blog-footer">
+        <div class="blog-footer-heading">
+          Blog template built for <span class="years">Bootstrap</span> by
+          <span class="years">@mdo</span>
+        </div>
+        <div class="blog-footer-content">
+          <a href="#" class="years">Back to top</a>
+        </div>
+      </footer>
+    </div>
+    <script src="blog.js"></script>
+  </body>
+</html>
